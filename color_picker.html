@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <html>
+
+    <head>
+
+
+        <meta charset="UTF-8">
+        <title>调色板</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #title {
+                margin: 20px;
+                font-size: 2em;
+                text-align: center;
+                font-family: Fira Code, Arial, Helvetica, sans-serif;
+            }
+
+            .color-picker {
+                width: 500px;
+                margin-top: 100px;
+            }
+
+            .color-picker-panel {
+                height: 240px;
+                margin-bottom: 32px;
+                border: 1px solid #E8E8E8;
+            }
+
+            .color-picker-config-item {
+                display: flex;
+                margin-bottom: 16px;
+            }
+
+            .color-picker-config-item-label {
+                width: 50px;
+            }
+
+            .color-picker-config-item-range {
+                flex: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="color-picker">
+            <section id="title">Color Picker</section>
+            <!-- 颜色面板 -->
+            <section id="panel" class="color-picker-panel"></section>
+            <!-- 配置面板 -->
+            <section class="color-picker-config">
+                <div class="color-picker-config-item">
+                    <div class="color-picker-config-item-label">
+                        <span>R: </span>
+                        <span id="config-red-value">0</span>
+                    </div>
+                    <input id="config-red-range" type="range" class="color-picker-config-item-range" />
+                </div>
+                <div class="color-picker-config-item">
+                    <div class="color-picker-config-item-label">
+                        <span>G: </span>
+                        <span id="config-green-value">0</span>
+                    </div>
+                    <input id="config-green-range" type="range" class="color-picker-config-item-range" />
+                </div>
+                <div class="color-picker-config-item">
+                    <div class="color-picker-config-item-label">
+                        <span>B: </span>
+                        <span id="config-blue-value">0</span>
+                    </div>
+                    <input id="config-blue-range" type="range" class="color-picker-config-item-range" />
+                </div>
+            </section>
+        </div>
+    </body>
+    <script>
+        let color = [{
+                color: 'red',
+                value: 0
+            },
+            {
+                color: 'green',
+                value: 0
+            },
+            {
+                color: 'blue',
+                value: 0
+            }
+        ];
+        for (let index = 0; index < color.length; index++) {
+            let element = color[index];
+            document.getElementById('config-' + element.color + '-range').addEventListener('change', function (event) {
+                element.value = event.target.value * 2.55;
+                document.getElementById('panel').style.setProperty('background', 'rgb(' + color[0].value +
+                    ', ' + color[1].value + ', ' + color[2].value + ')');
+                document.getElementById('config-' + element.color + '-value').innerHTML = Math.round(element
+                    .value);
+            });
+        }
+    </script>
+
+    </html>
+</body>
+
+</html>
