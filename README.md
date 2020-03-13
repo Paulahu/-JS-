@@ -7,8 +7,8 @@
   
 # 预览
 1. 调色盘(color_picker)
-预览链接：http://hujiahui.monster/wheels_built_by_origin_JS/color_picker/color_picker.html
-源码链接：https://github.com/Paulahu/wheels_built_by_origin_JS/blob/master/color_picker/color_picker.html
+- [预览链接](http://hujiahui.monster/wheels_built_by_origin_JS/color_picker/color_picker.html)
+- [源码链接](https://github.com/Paulahu/wheels_built_by_origin_JS/blob/master/color_picker/color_picker.html)
 
 # 运行
 1. `git clone https://github.com/Paulahu/wheels_built_by_origin_JS.git`
