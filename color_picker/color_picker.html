@@ -15,12 +15,19 @@
 
 
         <meta charset="UTF-8">
-        <title>学习小课堂：调色板</title>
+        <title>调色板</title>
         <style>
             body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+
+            #title {
+                margin: 20px;
+                font-size: 2em;
+                text-align: center;
+                font-family: Fira Code, Arial, Helvetica, sans-serif;
             }
 
             .color-picker {
@@ -51,10 +58,11 @@
 
     <body>
         <div class="color-picker">
+            <section id="title">Color Picker</section>
             <!-- 颜色面板 -->
-            <div id="panel" class="color-picker-panel"></div>
+            <section id="panel" class="color-picker-panel"></section>
             <!-- 配置面板 -->
-            <div class="color-picker-config">
+            <section class="color-picker-config">
                 <div class="color-picker-config-item">
                     <div class="color-picker-config-item-label">
                         <span>R: </span>
@@ -76,7 +84,7 @@
                     </div>
                     <input id="config-blue-range" type="range" class="color-picker-config-item-range" />
                 </div>
-            </div>
+            </section>
         </div>
     </body>
     <script>
