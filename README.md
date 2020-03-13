@@ -6,12 +6,12 @@
 - 后期会继续更新，欢迎交流
   
 # 预览
-1. 调色盘(color_picker)
+### 调色盘(color_picker)
 - 知识点：
-a. 如何通过 CSS 表达颜色 (3种方式：十六进制/RGB/内置字符)
-b. 如何给 DOM 添加监听事件
-c. 如何通过 JS 修改 DOM 的 CSS
-d. 如何通过 JS 修改 DOM 的节点内容
+   1. 如何通过 CSS 表达颜色 (3种方式：十六进制/RGB/内置字符)
+   2. 如何给 DOM 添加监听事件
+   3. 如何通过 JS 修改 DOM 的 CSS
+   4. 如何通过 JS 修改 DOM 的节点内容
 
 - [预览链接](http://hujiahui.monster/wheels_built_by_origin_JS/color_picker/color_picker.html)
 - [源码链接](https://github.com/Paulahu/wheels_built_by_origin_JS/blob/master/color_picker/color_picker.html)
